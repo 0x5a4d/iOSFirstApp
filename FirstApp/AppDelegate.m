@@ -8,6 +8,28 @@
 
 #import "AppDelegate.h"
 
+@class Vehicle;
+
+@interface Rider:NSObject
+@property (strong,nonatomic)Vehicle * vehicle;
+@end
+
+@implementation Rider
+-(void)dealloc{
+    NSLog(@"dealloc Rider");
+}
+
+@end
+@interface Vehicle: NSObject
+@property (strong,nonatomic)Rider * rider;
+@end
+
+@implementation Vehicle
+-(void)dealloc{
+    NSLog(@"dealloc Vehicle");
+}
+@end
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +39,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    Rider * rider = [[Rider alloc] init];
+    Vehicle * vehicle = [[Vehicle alloc] init];
+    rider.vehicle = vehicle;
+    vehicle.rider = rider;
+    
+    // у объектов Rider и Vehicle никогда не будут вызваны методы dealloc, потому как они ссылаются друг на доруга strong ссылками - это retain cycle. Чтобы исправить это, нужно одну из ссылок как weak, чтобы  удаление одного объекта не блокировалось strong ссылкой из второго.
+    
     return YES;
 }
 
