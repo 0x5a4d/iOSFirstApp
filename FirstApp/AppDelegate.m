@@ -22,6 +22,7 @@
 @end
 @interface Vehicle: NSObject
 @property (strong,nonatomic)Rider * rider;
+//@property (weak,nonatomic)Rider * rider; - для устранения retain cycle
 @end
 
 @implementation Vehicle
