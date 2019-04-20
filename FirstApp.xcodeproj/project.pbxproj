@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9233F770226B732800F6F218 /* HDFalcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9233F76F226B732800F6F218 /* HDFalcon.m */; };
 		9284D92D225BABC00091B11D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9284D92C225BABC00091B11D /* AppDelegate.m */; };
 		9284D930225BABC00091B11D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9284D92F225BABC00091B11D /* ViewController.m */; };
 		9284D935225BABC20091B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9284D934225BABC20091B11D /* Assets.xcassets */; };
@@ -39,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9233F76B226B699D00F6F218 /* HDAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDAnimal.h; sourceTree = "<group>"; };
+		9233F76C226B6B5D00F6F218 /* HDBird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDBird.h; sourceTree = "<group>"; };
+		9233F76D226B70F200F6F218 /* HDPredator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPredator.h; sourceTree = "<group>"; };
+		9233F76E226B722600F6F218 /* HDFalcon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDFalcon.h; sourceTree = "<group>"; };
+		9233F76F226B732800F6F218 /* HDFalcon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDFalcon.m; sourceTree = "<group>"; };
 		9284D928225BABC00091B11D /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9284D92B225BABC00091B11D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9284D92C225BABC00091B11D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +134,11 @@
 				9284D936225BABC20091B11D /* LaunchScreen.storyboard */,
 				9284D939225BABC20091B11D /* Info.plist */,
 				9284D93A225BABC20091B11D /* main.m */,
+				9233F76B226B699D00F6F218 /* HDAnimal.h */,
+				9233F76E226B722600F6F218 /* HDFalcon.h */,
+				9233F76F226B732800F6F218 /* HDFalcon.m */,
+				9233F76D226B70F200F6F218 /* HDPredator.h */,
+				9233F76C226B6B5D00F6F218 /* HDBird.h */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -285,6 +296,7 @@
 				9284D930225BABC00091B11D /* ViewController.m in Sources */,
 				9284D93B225BABC20091B11D /* main.m in Sources */,
 				9284D962225BAF1E0091B11D /* HDQueue.m in Sources */,
+				9233F770226B732800F6F218 /* HDFalcon.m in Sources */,
 				9284D95F225BAE9B0091B11D /* HDStack.m in Sources */,
 				9284D92D225BABC00091B11D /* AppDelegate.m in Sources */,
 			);

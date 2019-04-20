@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HDFalcon.h"
 
 @class Vehicle;
 
@@ -47,6 +48,13 @@
     vehicle.rider = rider;
     
     // у объектов Rider и Vehicle никогда не будут вызваны методы dealloc, потому как они ссылаются друг на доруга strong ссылками - это retain cycle. Чтобы исправить это, нужно одну из ссылок как weak, чтобы  удаление одного объекта не блокировалось strong ссылкой из второго.
+    
+    HDFalcon * falcon = [[HDFalcon alloc] init];
+    NSLog(@"%@", [falcon getName]);
+
+    [falcon fly];
+    [falcon voice];
+    [falcon hunt];
     
     return YES;
 }
